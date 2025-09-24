@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Recipe Generator</title>
-    <stylesheet href="styles.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Recipe Generator</title>
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Create a Recipe</h1>
+  <div class="wrapper">
+    <h1>🍳 Recipe Generator</h1>
     <div class="container">
-<div class="card">
-<label for="input">Enter</label>
-<textarea id="input" placeholder="Enter text..."></textarea>
-<button id="send">Send</button>
-</div>
-<div class="card">
-<label for="output">Output</label>
-<div id="output" class="output"></div>
-<script src="script.js"></script>
-</div>
-</div>
+      <div class="card">
+        <label for="input">Enter text</label>
+        <textarea id="input" placeholder="Type ingredients or instructions..."></textarea>
+        <button id="send">Generate</button>
+      </div>
+      <div class="card">
+        <label for="output">Output</label>
+        <div id="output" class="output"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
