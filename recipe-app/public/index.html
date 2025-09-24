@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Server Test</title>
+    <title>Recipe Generator</title>
+    <stylesheet href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Server is working!</h1>
+    <h1>Create a Recipe</h1>
+    <div class="container">
+<div class="card">
+<label for="input">Enter</label>
+<textarea id="input" placeholder="Enter text..."></textarea>
+<button id="send">Send</button>
+</div>
+<div class="card">
+<label for="output">Output</label>
+<div id="output" class="output"></div>
+<script src="script.js"></script>
+</div>
+</div>
 </body>
 </html>
