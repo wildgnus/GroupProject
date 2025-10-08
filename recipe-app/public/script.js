@@ -37,3 +37,19 @@ sendBtn.addEventListener('click', async () => {
     output.textContent = "Ошибка запроса: " + err.message;
   }
 });
+
+const themeToggle = document.getElementById('themeToggle');
+const body = document.body;
+
+// Проверяем сохранённую тему
+if (localStorage.getItem('theme') === 'dark') {
+  body.classList.add('dark');
+  themeToggle.textContent = '☀️';
+}
+
+themeToggle.addEventListener('click', () => {
+  body.classList.toggle('dark');
+  const isDark = body.classList.contains('dark');
+  themeToggle.textContent = isDark ? '☀️' : '🌙';
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+});
